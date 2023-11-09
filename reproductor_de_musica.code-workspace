@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../clase_maquetacion"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "clase_maquetacion"
+	}
+}
