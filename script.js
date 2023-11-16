@@ -19,6 +19,8 @@ axios.get('https://leonardoapi.onrender.com/music')
             </div>`
 
             div.addEventListener('click', () => {
+
+                // clase siguiente ponemos A
                 console.log(`El usuario hizo click en ${song.title}`)
             })
 

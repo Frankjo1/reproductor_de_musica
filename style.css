@@ -1,9 +1,10 @@
-*{background-color: #6503A6;
-   padding: 8px;
-   margin: 0;
+*{
+  padding: 8px;
+  margin: 0px;
 }
 
 header{
+  background-color: #6503A6;
   display: flex;
   justify-content: space-between;
 }
@@ -27,6 +28,7 @@ button.boton{
 }
 
 main{
+  background-color: #6503A6;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -121,6 +123,11 @@ p.texto{
 }
 
 footer{
+  margin: 0;
+  justify-items: center;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
   display: flex;
   background-color: #2D1319;
@@ -141,6 +148,7 @@ img.album3{
 
 div.musica3{
   display: flex;
+  justify-content: space-between;
 }
 
 h4.cancion3{
