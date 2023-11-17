@@ -11,18 +11,31 @@ axios.get('https://leonardoapi.onrender.com/music')
             let div = document.createElement('div')
             div.classList.add('musica')
 
-            div.innerHTML =`
-            <img class="album" src="${song.path.front}" alt="">
-            <div>
-                <h2 class="cancion">${song.title}</h2>
-                <p class="autores">${song.author}</p>
-            </div>`
+            div.addEventListener(`click`, () => {
 
-            div.addEventListener('click', () => {
+                console.log(`hizo click`)
 
-                // clase siguiente ponemos A
-                console.log(`El usuario hizo click en ${song.title}`)
+                document.querySelector(`#current-song-title`).
+                innerHTML = song.title
+
+                document.querySelector(`#current-song-author`).
+                innerHTML = song.author
+
+                document.querySelector(`#current-song-img`).
+                setAttribute(`src`, song.path.front)
+
+                
+                document.querySelector(`#current-song-audio`).
+                setAttribute(`src`, song.path.audio)
+          
             })
+
+            div.innerHTML +=`
+                <img class="album" src="${song.path.front}" alt="">
+                <div>
+                    <h2 class="cancion">${song.title}</h2>
+                    <p class="autores">${song.author}</p>
+                </div>`
 
             contenedor.appendChild(div)
 
