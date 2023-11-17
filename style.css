@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body{
+  background-color: #6503A6;
+}
+
 header{
   background-color: #6503A6;
   display: flex;
